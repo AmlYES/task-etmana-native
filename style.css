@@ -1,0 +1,608 @@
+  @font-face {
+    font-family: 'Montserrat-Bold'; 
+    src: url("assets/Montserrat-Bold.ttf") format('truetype'); 
+  }
+  @font-face{
+    font-family: 'Montserrat-SemiBold'; 
+    src: url("assets/Montserrat-SemiBold.ttf") format('truetype'); 
+  }
+  @font-face{
+    font-family: 'Montserrat-Regular'; 
+    src: url("assets/Montserrat-Regular.ttf") format('truetype'); 
+  }
+  @font-face {
+    font-family: 'Montserrat-Medium'; 
+    src: url("assets/Montserrat-Medium.ttf") format('truetype'); 
+  }
+  @font-face {
+    font-family: 'Helvetica-Neue-Regular'; 
+    src: url("assets/HelveticaNeue\ Regular.ttf") format('truetype'); 
+  }
+  @font-face {
+    font-family: 'Helvetica-Neue-Medium'; 
+    src: url("assets/HelveticaNeue\ Medium.ttf") format('truetype'); 
+  }
+  @font-face {
+    font-family: 'Helvetica-Neue-Bold'; 
+    src: url("assets/HelveticaNeue\ Bold.ttf") format('truetype'); 
+  }
+  :root {
+    /* Colors */
+    --light-navy:#202E65;
+    --dark-gray:#2C3341;
+    --dark-navy:#0e1740;
+    --dark-green:#48A299;
+    --green:#00A599;
+    --lila:#EFEAF1;
+    --dark-lila:#ccbcd4;
+    --purple:#5E2D77;
+    --gray:#F5F9F9;
+    --gray2: #A0A3B1;
+    --gray3:#D8DAE0;
+    --gray4:#9FA3B2;
+    --gray5:#7F828E;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 3px solid var(--gray3);
+    color: var(--dark-gray);
+    font-family:"Poppins", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    background-size: contain;
+    background-color: var(--gray);
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-left: 200px;
+    padding-top: 100px;
+
+}
+
+.body{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.footer{
+    background-color: var(--dark-navy);
+}
+
+.header-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: auto;
+    height: auto;
+}
+
+.title{
+    margin-top: 130px;
+    font-family: 'Montserrat-Medium';
+    font-size:90px;
+    color: var(--dark-navy);
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    width: 100px;
+    border: 5px solid var(--dark-green);
+    border-radius: 8px;
+}
+
+.top-messege{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.top-messege-title{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.top-messege-content{
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+}
+
+.progress-bar-container{
+    display:flex;
+    justify-content: left;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--gray3);
+    border-radius: 10px;
+    align-self: center;
+}
+
+.progress{
+    height: 10px;
+    border-radius: 10px;
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+    padding-top:30px ;
+}
+
+.status-text{
+    font-family: 'Montserrat-Bold';
+    font-size: 48px;
+    color: var(--dark-navy);
+}
+
+.invoice-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 260px;
+    height: 58px;
+    background-color: var(--lila);
+    transition: background-color 0.3s;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer; 
+}
+
+.invoice-button:hover {
+    background-color: var(--dark-lila);
+  }
+
+.button-icon{
+    margin-right: 15px;
+}
+
+.button-text{
+    font-family: 'Montserrat-Medium';
+    font-size:24px;
+    color: var(--purple);
+}
+
+.invoice{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px;
+    background-color: var(--gray);
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.invoice-titles{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.invoice-order-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-info-content {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.order-info-subtitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.order-info-values{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    font-weight: bold;
+}
+
+.invoice-shipping-address{
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-address{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.name{
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.address{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.phone-number{
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+.review-title{
+    font-family: 'Montserrat-SemiBold'; 
+    font-size: 38px;
+    margin-bottom: 80px;
+}
+
+.cart-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.product-description-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sold-by{ 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description{ 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity-container{
+    display: flex;
+    gap: 3px; 
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.quantity{
+    color: var(--gray2);
+}
+
+.price{ 
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.separator{
+    height: 3px;
+    background-color: var(--gray);
+    margin: 30px
+}
+
+.bottom-messege-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 140px;
+}
+
+.bottom-messege-content{
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+}
+
+.thankyou{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.signature{
+    font-family: 'Montserrat-Regular';
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1271px) and (max-width: 1600px ){
+    .body{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .order-info-content{
+        font-size: 14px;
+    }
+    .invoice{
+        padding: 40px;
+        gap: 20px;
+    }
+    .name{
+        font-size: 16px;
+    }
+    .address, .phone-number{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1270px ){
+    .header{
+        padding-left: 100px;
+        padding-top: 50px;
+        height: 250px;
+    }
+    .body{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .title{
+        margin-top: 80px;
+        font-size:45px;
+    }
+    .logo{
+        width: 25%;
+        height: 25%;
+    }
+    .line{
+        width: 60px;
+        border: 3px solid var(--dark-green);
+        border-radius: 5px;
+    }
+    .top-messege-title{
+        font-size: 20px;
+    }
+    .top-messege-content, .product-description, .quantity-container, .bottom-messege-content{
+        font-size: 14px;
+    }
+    .status-text{
+        font-size: 28px;
+    }
+    .invoice-button{
+        width: 180px;
+        height: 50px;
+    }
+    .button-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .button-text, .sold-by{
+        font-size:18px;
+    }
+    .invoice{
+        flex-direction: column;
+        gap: 100px;
+        padding: 30px;
+    }
+    .review-title{ 
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    .price, .thankyou, .signature{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 600px ) and (min-width: 392px) {
+    .header{
+        padding-left: 50px;
+        padding-top: 50px;
+        height: 150px;
+    }
+    .body{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .title{
+        margin-top: 40px;
+        font-size:30px;
+    }
+    .logo{
+        width: 25%;
+        height: 25%;
+    }
+    .line{
+        width: 40px;
+        border: 2px solid var(--dark-green);
+        border-radius: 5px;
+    }
+    .top-messege-title{
+        font-size: 18px;
+    }
+    .top-messege-content, .bottom-messege-content{
+        font-size: 14px;
+    }
+    .bottom-messege-container{
+        margin-top: 40px;
+    }
+    .product-description, .quantity-container{
+        font-size: 12px;
+    }
+    .status-text{
+        font-size: 24px;
+    }
+    .invoice-button{
+        width: 160px;
+        height: 40px;
+    }
+    .button-icon{
+        width: 18px;
+        height: 18px;
+    }
+    .button-text, .sold-by{
+        font-size:14px;
+    }
+    .invoice{
+        flex-direction: column;
+        gap: 100px;
+        padding: 30px;
+    }
+    .invoice-titles{
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .order-info-content {
+        font-size: 12px;
+    }
+    .shipping-address{
+        gap: 14px;
+    }
+    .name{
+        font-size: 14px;
+    } 
+    .address{
+        font-size: 12px;
+    }
+    .phone-number{
+        font-size: 14px;
+    }
+    .review-title{ 
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .price, .thankyou, .signature{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:391px) {
+    .header{
+        padding-left: 50px;
+        padding-top: 50px;
+        height: 150px;
+    }
+    .body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .title{
+        margin-top: 40px;
+        font-size:30px;
+    }
+    .logo{
+        width: 25%;
+        height: 25%;
+    }
+    .line{
+        width: 40px;
+        border: 1px solid var(--dark-green);
+        border-radius: 5px;
+    }
+    .top-messege{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .top-messege-title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .top-messege-content, .bottom-messege-content{
+        font-size: 12px;
+    }
+    .bottom-messege-container{
+        margin-top: 10px;
+    }
+
+    .product-description, .quantity-container{
+        font-size: 12px;
+    }
+    .status{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .status-text{
+        font-size: 20px;
+    }
+    .invoice-button{
+        width: 160px;
+        height: 40px;
+    }
+    .button-icon{
+        width: 18px;
+        height: 18px;
+    }
+    .button-text, .sold-by{
+        font-size:14px;
+    }
+    .invoice{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 60px;
+        padding: 15px;
+    }
+    .invoice-titles{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .order-info-content {
+        font-size: 10px;
+        gap: 15px;
+    }
+    .shipping-address{
+        gap: 14px;
+    }
+    .name{
+        font-size: 12px;
+    } 
+    .address{
+        font-size: 10px;
+    }
+    .phone-number{
+        font-size: 10px;
+    }
+    .review-title{ 
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .price, .thankyou, .signature{
+        font-size: 14px;
+    }
+    .cart-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-messege-container{
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
